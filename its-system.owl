@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#"
+     xml:base="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#hasAnswer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#hasAnswer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#hasArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#hasArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#hasResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#takesQuiz -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#takesQuiz">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#answer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#answer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#area -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#area">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Circle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Rectangle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Square"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Triangle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#fullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#fullName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#question -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#question">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Circle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Circle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Rectangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Result"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Square -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Square">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#circleFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#circleFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Circle"/>
+        <area>π×radius×radius</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+        <answer>84</answer>
+        <question>What is the area of triangle having base 12 units, height 14 unit?</question>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+        <answer>28</answer>
+        <question>What is the area of triangle having base 7 units, height 8 units?</question>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+        <answer>50.24</answer>
+        <question>What is the area of a circle with radius 4 units?</question>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+        <answer>36</answer>
+        <question>What is the area of a square with side length 6 units?</question>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#quiz5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Quiz"/>
+        <answer>21</answer>
+        <question>What is the area of triangle having base 6 units, height 7 units?</question>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#rectangleFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#rectangleFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Rectangle"/>
+        <area>length × breadth</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#squareFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#squareFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Square"/>
+        <area>side × side</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#triangleFormula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#triangleFormula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Triangle"/>
+        <area>1/2 × base × height</area>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Nipesh%20Tamang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#Nipesh%20Tamang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nipeshtamang/ontologies/2024/11/its-system#User"/>
+        <email>nipeshtamang@gmail.com</email>
+        <fullName>Nipesh Tamang</fullName>
+        <password>123</password>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
